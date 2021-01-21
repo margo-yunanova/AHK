@@ -10,3 +10,5 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Reload
 TrayTip, update, test4
 Return
+
+; тест
