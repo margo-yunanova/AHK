@@ -5,10 +5,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #Include autocorrect.ahk
 #Include order_detail_win_s.ahk
+#Include CheckPrice.ahk
 
 #q::
 Reload
-TrayTip, update, test4
+TrayTip, update, main
 Return
 
 ; тест
