@@ -13,6 +13,7 @@ Log("start")
 ; Log(Round(test, 2))
 ; Log(Round(" 12.346 ", 2))
 ; Return
+; тест
 
 
 clipExcel := CopyToClipboard()
