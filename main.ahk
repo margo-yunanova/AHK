@@ -3,13 +3,19 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+SetTitleMatchMode, RegEx
+
+
 #Include autocorrect.ahk
 #Include order_detail_win_s.ahk
 #Include CheckPrice.ahk
+#Include hotkey.ahk
 
 #q::
-Reload
 TrayTip, update, main
+ToolTip, Reloading main.ahk
+Sleep, 500
+Reload
 Return
 
 ; тест

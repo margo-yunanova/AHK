@@ -2,6 +2,9 @@
     clipboard := ""
     Send, ^c
     ClipWait, 1
+    if (ErrorLevel <> 0) {
+        Log("Clipboard timed out!!!")
+    }
     return clipboard
 }
 Set1cCell(value){
@@ -25,6 +28,7 @@ Log(msg){
 }
 
 #s::
+SetTitleMatchMode, 1
 ;Set1cCell("123")
 ;Send, {Right 1}
 ;Return
@@ -35,17 +39,17 @@ clip := CopyToClipboard()
 pick:= SubStr(clip, 82*(8-1)+45, 8)
 price:= SubStr(clip, 82*(10-1)+59, 15)
 weight:= SubStr(clip, 82*(16-1)+21, 15)
-Log("Price=" . price)
+Log("pick=" . pick . " price=" . price . " weight=" . weight)
 WinActivate, TM Production
-Send {Right 3}
+Send, {Right 3}
 Set1cCell(pick)
 Send, {Right 1}
 Set1cCell(price)
-Send {Right 2}
+Send, {Right 2}
 Set1cCell(weight)
 Send {Left 6}{Down 1}
 CopyToClipboard()
-WinActivate, Session A
+WinActivate, Session A - [24 x 80]
 Send, {F3}
 Sleep 1000
 Send {Up 4}{TAB}{Del 5}^v{Enter}
