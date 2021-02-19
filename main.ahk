@@ -12,7 +12,7 @@ SetTitleMatchMode, RegEx
 #Include hotkeyMicrosoftOffice.ahk  
 
 #q::
-ToolTip, Reloading main.ahk
+ToolTip, Reloading main.ahk ;высплывающее сообщение у курсора поверх любого экрана
 Sleep, 500
 Reload
 Return
