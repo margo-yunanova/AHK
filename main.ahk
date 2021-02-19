@@ -9,14 +9,10 @@ SetTitleMatchMode, RegEx
 #Include autocorrect.ahk
 #Include order_detail_win_s.ahk
 #Include CheckPrice.ahk
-#Include hotkey.ahk
+#Include hotkeyMicrosoftOffice.ahk  
 
 #q::
-TrayTip, update, main
 ToolTip, Reloading main.ahk
 Sleep, 500
 Reload
 Return
-
-; тест
-;1
