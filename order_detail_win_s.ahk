@@ -13,8 +13,7 @@ Set1cCell(value){
     clipboard:= value
     Send, ^v{Enter}
     WinWaitActive, ahk_class V8TopLevelFrameSDI
-    ;Sleep, 1000
-    MouseMove, 0, 0 
+    MouseMove, 800, 500
     StartTime := A_TickCount
     while (A_cursor = "Wait")
         Sleep 10
@@ -28,11 +27,6 @@ Log(msg){
 }
 
 #s::
-SetTitleMatchMode, 1
-;Set1cCell("123")
-;Send, {Right 1}
-;Return
-
 Log("hotkey #s")
 WinActivate, Session A
 clip := CopyToClipboard()
@@ -49,13 +43,11 @@ Send, {Right 2}
 Set1cCell(weight)
 Send {Left 6}{Down 1}
 CopyToClipboard()
-WinActivate, Session A - [24 x 80]
+WinActivate, Session A
 Send, {F3}
 Sleep 1000
 Send {Up 4}{TAB}{Del 5}^v{Enter}
-;Send {Up 4}{TAB}{Del 5}
-;Send, ^v
-;Sleep 1000
-;Send {Enter}
-TrayTip, done, done
+ToolTip, done
+Sleep, 1500
+Reload
 Return
