@@ -1,9 +1,12 @@
-﻿#IfWinActive - Сообщение \(HTML\) $ ahk_class rctrl_renwnd32 ahk_exe OUTLOOK.EXE
+﻿#IfWinActive - Message \(HTML\) $ ahk_class rctrl_renwnd32 ahk_exe OUTLOOK.EXE
 #z::
-Send, {alt}ЯАьП ; вложить файл если письмо развернуто
+Send, {alt}HAFB ; вложить файл если письмо развернуто
 
 #IfWinActive - Outlook$ ahk_class rctrl_renwnd32 ahk_exe OUTLOOK.EXE
 #z::
-Send, {alt}БСЮВАьП ; вложить файл если письмо в окне outlook
+Send, {alt}E2AFB ; вложить файл если письмо в окне outlook
 
-#IfWinActive
+
+
+#IfWinActive ; чтобы отключить контекстнозависимые горячие клавиши
+

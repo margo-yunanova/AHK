@@ -1,8 +1,11 @@
 ﻿:*:sr@::Stas.Ravnyushkin@trelleborg.com
-:*:tsq@::TSS.RU.QUOTE@trelleborg.com
+:*:trq@::TSS.RU.QUOTE@trelleborg.com
 :*:ssh@::Sergey.Shakhin@trelleborg.com
+:*:gl@::georgy.leonov@trelleborg.com
+:*:ek@::Evgeniy.Koval@trelleborg.com
+:*:at@::alexander.tikhonov@trelleborg.com
 
-:*:оплата"::оплата на дату оплаты
+:*:опл1::предоплата 100% в рублях по курсу ЦБ РФ на дату оплаты
 
 :*:c4cint::
 (
@@ -44,4 +47,11 @@ This email is intended only for the addressee named above and may contain confid
 Указанные даты поставки не являются обязательными ввиду пандемии COVID 19.
 и, учитывая текущую ситуацию, являются лишь указанием.
 Мы оставляем за собой право корректировать даты доставки в любое время.
+)
+
+:*:отп21::
+(
+Уважаемые клиенты, при заказе изделий на производство просим учитывать производственный
+отпуск заводов с 23.12.21 по 9.01.2022 в связи с рождественскими и новогодними праздниками. 
+Данный период исключается из срока поставки.
 )
