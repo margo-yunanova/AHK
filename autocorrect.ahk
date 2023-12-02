@@ -1,6 +1,6 @@
-﻿:*:sr@::Stas.Ravnyushkin@trelleborg.com
-:*:tsq@::TSS.RU.QUOTE@trelleborg.com
-:*:ssh@::Sergey.Shakhin@trelleborg.com
+﻿:*:sr@::_________________
+:*:tsq@::__________________
+:*:ssh@::__________________
 
 :*:оплата"::оплата на дату оплаты
 
